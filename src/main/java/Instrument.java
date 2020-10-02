@@ -1,4 +1,4 @@
-public class Instrument {
+public abstract class Instrument implements IPlay{
 
     private InstrumentType type;
 

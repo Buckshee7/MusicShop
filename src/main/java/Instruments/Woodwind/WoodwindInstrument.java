@@ -7,8 +7,8 @@ public abstract class WoodwindInstrument extends Instrument {
 
     private int length;
 
-    public WoodwindInstrument(String colour, int length){
-        super(InstrumentType.WOODWIND, colour);
+    public WoodwindInstrument(String colour, int length, String instrumentName){
+        super(InstrumentType.WOODWIND, colour, instrumentName);
         this.length = length;
     }
 

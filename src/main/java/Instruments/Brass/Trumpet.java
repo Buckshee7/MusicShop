@@ -6,15 +6,11 @@ import Instruments.InstrumentType;
 public class Trumpet extends Instrument {
 
     public Trumpet(){
-        super(InstrumentType.BRASS, "Brass");
+        super(InstrumentType.BRASS, "Brass", "Trumpet");
     }
 
     public String play(){
         return "toot toot";
     }
-
-    public static String getInstrumentName(){
-        return "Trumpet";
-    };
 
 }

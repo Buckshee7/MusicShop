@@ -1,5 +1,6 @@
 package Strings;
 
+import Instruments.InstrumentType;
 import Instruments.Strings.Violin;
 import org.junit.Before;
 import org.junit.Test;
@@ -17,7 +18,7 @@ public class ViolinTest {
 
     @Test
     public void hasType(){
-        assertEquals("String", this.instrument.getType());
+        assertEquals(InstrumentType.STRING, this.instrument.getType());
     }
 
     @Test

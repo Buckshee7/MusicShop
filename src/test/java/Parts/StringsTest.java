@@ -14,12 +14,12 @@ public class StringsTest {
 
     @Before
     public void Strings(){
-        this.strings = new Strings(Banjo.getInstrumentName());
+        this.strings = new Strings("Banjo");
     }
 
     @Test
     public void canGetPartName(){
-        assertEquals("Banjo strings", this.strings.getPartName());
+        assertEquals("Banjo strings", this.strings.getName());
     }
 
     @Test

@@ -1,5 +1,6 @@
 package Percussion;
 
+import Instruments.InstrumentType;
 import Instruments.Percussion.Bongos;
 import org.junit.Before;
 import org.junit.Test;
@@ -17,7 +18,7 @@ public class BongosTest {
 
     @Test
     public void hasType(){
-        assertEquals("Percussion", this.instrument.getType());
+        assertEquals(InstrumentType.PERCUSSION, this.instrument.getType());
     }
 
     @Test

@@ -1,6 +1,7 @@
 package Brass;
 
 import Instruments.Brass.Trumpet;
+import Instruments.InstrumentType;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -17,7 +18,7 @@ public class TrumpetTest {
 
     @Test
     public void hasType(){
-        assertEquals("Brass", this.instrument.getType());
+        assertEquals(InstrumentType.BRASS, this.instrument.getType());
     }
 
     @Test

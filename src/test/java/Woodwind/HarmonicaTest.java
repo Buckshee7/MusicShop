@@ -1,5 +1,6 @@
 package Woodwind;
 
+import Instruments.InstrumentType;
 import Instruments.Woodwind.Harmonica;
 import org.junit.Before;
 import org.junit.Test;
@@ -17,7 +18,7 @@ public class HarmonicaTest {
 
     @Test
     public void hasType(){
-        assertEquals("Woodwind", this.instrument.getType());
+        assertEquals(InstrumentType.WOODWIND, this.instrument.getType());
     }
 
     @Test

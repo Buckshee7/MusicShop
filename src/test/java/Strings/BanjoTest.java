@@ -1,5 +1,6 @@
 package Strings;
 
+import Instruments.InstrumentType;
 import Instruments.Strings.Banjo;
 import Parts.Strings;
 import org.junit.Before;
@@ -18,7 +19,7 @@ public class BanjoTest {
 
     @Test
     public void hasType(){
-        assertEquals("String", this.instrument.getType());
+        assertEquals(InstrumentType.STRING, this.instrument.getType());
     }
 
     @Test
@@ -57,7 +58,7 @@ public class BanjoTest {
     @Test
     public void canAddStrings(){
         this.instrument.removeStrings();
-        Strings strings = new Strings(Banjo.getInstrumentName());
+        Strings strings = new Strings(this.instrument.getName());
         this.instrument.addStrings(strings);
         assertEquals(strings, this.instrument.getStrings());
     }

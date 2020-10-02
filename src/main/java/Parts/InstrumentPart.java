@@ -14,7 +14,7 @@ public abstract class InstrumentPart implements IChangeOwners {
         this.forInstrument = forInstrument;
     }
 
-    public String getPartName() {
+    public String getName() {
         return name;
     }
 

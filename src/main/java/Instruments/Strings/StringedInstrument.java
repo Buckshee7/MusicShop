@@ -10,7 +10,7 @@ public abstract class StringedInstrument extends Instrument {
     private Strings strings;
 
     public StringedInstrument(String instrumentName, int NumStrings, String colour, boolean soldWithStrings){
-        super(InstrumentType.STRING, colour);
+        super(InstrumentType.STRING, colour, instrumentName);
         this.NumStrings = NumStrings;
         this.strings = soldWithStrings ? new Strings(instrumentName): null;
     }
@@ -30,7 +30,5 @@ public abstract class StringedInstrument extends Instrument {
     public void removeStrings() {
         this.strings = null;
     }
-
-
 
 }

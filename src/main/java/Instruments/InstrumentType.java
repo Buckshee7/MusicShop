@@ -1,3 +1,5 @@
+package Instruments;
+
 public enum InstrumentType {
 
     WOODWIND("Woodwind"),
@@ -11,7 +13,7 @@ public enum InstrumentType {
     InstrumentType(String typeName) {
         this.typeName = typeName;
     }
-    
+
     public String toString() {
         return typeName;
     }

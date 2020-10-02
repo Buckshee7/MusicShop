@@ -1,7 +1,7 @@
 package Instruments.Percussion;
 
 public class Bongos extends PercussionInstrument {
-    
+
     public Bongos(String colour){
         super(colour, 30);
     }

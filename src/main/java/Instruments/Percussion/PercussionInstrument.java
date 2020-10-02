@@ -9,7 +9,7 @@ public abstract class PercussionInstrument extends Instrument {
 
     public PercussionInstrument(String colour, int maxDecibels){
         super(InstrumentType.PERCUSSION, colour);
-        this.maxDecibels = 70;
+        this.maxDecibels = maxDecibels;
     }
 
     public int getMaxDecibels() {

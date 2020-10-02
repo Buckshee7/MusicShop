@@ -1,19 +1,9 @@
 package Instruments.Keyboard;
 
-import Instruments.Instrument;
-import Instruments.InstrumentType;
-
-public class Piano extends Instrument {
-
-    private int keys;
+public class Piano extends KeyboardInstrument {
 
     public Piano(String colour){
-        super(InstrumentType.KEYBOARD, colour);
-        this.keys = 88;
-    }
-
-    public int getKeys() {
-        return keys;
+        super(colour, 88);
     }
 
     public String play(){

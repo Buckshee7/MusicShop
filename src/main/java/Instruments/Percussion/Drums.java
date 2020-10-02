@@ -20,4 +20,8 @@ public class Drums extends Instrument {
         return "bang-boom boom-bang tish!";
     }
 
+    public static String getInstrumentName(){
+        return "Drums";
+    };
+
 }

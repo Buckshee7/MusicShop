@@ -20,4 +20,8 @@ public class Guitar extends Instrument {
         return "Zwwwwaaaang, dli-zwang!";
     }
 
+    public static String getInstrumentName(){
+        return "Guitar";
+    };
+
 }

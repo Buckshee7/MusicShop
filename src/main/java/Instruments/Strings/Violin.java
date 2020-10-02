@@ -20,4 +20,8 @@ public class Violin extends Instrument {
         return "** screeching cat **";
     }
 
+    public static String getInstrumentName(){
+        return "Violin";
+    };
+
 }

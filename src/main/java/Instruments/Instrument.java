@@ -12,7 +12,7 @@ public abstract class Instrument implements IPlay, IChangeOwners {
     public Instrument(InstrumentType type, String colour) {
         this.type = type;
         this.colour = colour;
-        this.owner = "shop";
+        this.owner = null;
     }
 
     public String getType() {

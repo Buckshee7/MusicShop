@@ -20,4 +20,8 @@ public class Bongos extends Instrument {
         return "bop-bop-boppo-bop-bop";
     }
 
+    public static String getInstrumentName(){
+        return "Bongos";
+    };
+
 }

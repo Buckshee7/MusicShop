@@ -20,4 +20,8 @@ public class Piano extends Instrument {
         return "pling-plong-pling plongy-pling-plong";
     }
 
+    public static String getInstrumentName(){
+        return "Piano";
+    };
+
 }

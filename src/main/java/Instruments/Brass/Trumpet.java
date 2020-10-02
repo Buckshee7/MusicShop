@@ -13,4 +13,8 @@ public class Trumpet extends Instrument {
         return "toot toot";
     }
 
+    public static String getInstrumentName(){
+        return "Trumpet";
+    };
+
 }

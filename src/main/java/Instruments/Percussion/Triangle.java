@@ -20,4 +20,8 @@ public class Triangle extends Instrument {
         return "Ting";
     }
 
+    public static String getInstrumentName(){
+        return "Triangle";
+    };
+
 }

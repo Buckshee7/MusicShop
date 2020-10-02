@@ -20,5 +20,8 @@ public class Banjo extends Instrument {
         return "bara-na-na-na-ning-ning-ning";
     }
 
+    public static String getInstrumentName(){
+        return "Banjo";
+    };
 
 }

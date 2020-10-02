@@ -25,4 +25,8 @@ public class Organ extends Instrument {
         return "plong, plooooong, plong-ploooooooooooong";
     }
 
+    public static String getInstrumentName(){
+        return "Organ";
+    };
+
 }

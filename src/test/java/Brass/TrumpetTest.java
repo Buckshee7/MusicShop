@@ -31,4 +31,10 @@ public class TrumpetTest {
         assertEquals("toot toot", this.instrument.play());
     }
 
+    @Test
+    public void canChangeOwner(){
+        this.instrument.changeOwners("the music man");
+        assertEquals("the music man", this.instrument.getOwner());
+    }
+
 }

@@ -36,4 +36,10 @@ public class PianoTest {
         assertEquals("pling-plong-pling plongy-pling-plong", this.instrument.play());
     }
 
+    @Test
+    public void canChangeOwner(){
+        this.instrument.changeOwners("the music man");
+        assertEquals("the music man", this.instrument.getOwner());
+    }
+
 }

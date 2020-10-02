@@ -3,21 +3,17 @@ package Instruments.Woodwind;
 import Instruments.Instrument;
 import Instruments.InstrumentType;
 
-public class Clarinet extends Instrument {
-
-    private int length;
+public class Clarinet extends WoodwindInstrument {
 
     public Clarinet(String colour){
-        super(InstrumentType.WOODWIND, colour);
-        this.length = 26;
-    }
-
-    public int getLength() {
-        return length;
+        super(colour, 26);
     }
 
     public String play(){
         return "doo-di-loo-oo";
     }
 
+    public static String getInstrumentName(){
+        return "Clarinet";
+    }
 }

@@ -1,23 +1,17 @@
 package Instruments.Woodwind;
 
-import Instruments.Instrument;
-import Instruments.InstrumentType;
-
-public class Flute extends Instrument {
-
-    private int length;
+public class Flute extends WoodwindInstrument {
 
     public Flute(String colour){
-        super(InstrumentType.WOODWIND, colour);
-        this.length = 26;
-    }
-
-    public int getLength() {
-        return length;
+        super(colour, 26);
     }
 
     public String play(){
         return "...and one time, at bandcamp...";
+    }
+
+    public static String getInstrumentName(){
+        return "Flute";
     }
 
 }

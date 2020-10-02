@@ -1,19 +1,9 @@
 package Instruments.Percussion;
 
-import Instruments.Instrument;
-import Instruments.InstrumentType;
-
-public class Triangle extends Instrument {
-
-    private int maxDecibels;
+public class Triangle extends PercussionInstrument {
 
     public Triangle(String colour){
-        super(InstrumentType.PERCUSSION, colour);
-        this.maxDecibels = 10;
-    }
-
-    public int getMaxDecibels() {
-        return maxDecibels;
+        super(colour, 10);
     }
 
     public String play(){

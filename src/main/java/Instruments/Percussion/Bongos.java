@@ -1,19 +1,9 @@
 package Instruments.Percussion;
 
-import Instruments.Instrument;
-import Instruments.InstrumentType;
-
-public class Bongos extends Instrument {
-
-    private int maxDecibels;
-
+public class Bongos extends PercussionInstrument {
+    
     public Bongos(String colour){
-        super(InstrumentType.PERCUSSION, colour);
-        this.maxDecibels = 30;
-    }
-
-    public int getMaxDecibels() {
-        return maxDecibels;
+        super(colour, 30);
     }
 
     public String play(){

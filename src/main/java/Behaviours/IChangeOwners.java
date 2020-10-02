@@ -2,6 +2,8 @@ package Behaviours;
 
 public interface IChangeOwners {
 
-    public void changeOwners(String newOwner);
+    void changeOwners(String newOwner);
+
+    String getOwner();
 
 }

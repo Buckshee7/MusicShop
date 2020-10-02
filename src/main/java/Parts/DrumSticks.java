@@ -1,11 +1,12 @@
 package Parts;
 
-public class DrumSticks {
+public class DrumSticks extends InstrumentPart {
 
     private String owner;
+    private String forInstrument;
 
     public DrumSticks(){
-        this.owner = null;
+        super("Drumsticks", "Drums");
     }
 
 }

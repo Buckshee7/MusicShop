@@ -18,14 +18,20 @@ public class StringsTest {
     }
 
     @Test
-    public void canGetNameAsString(){
-        assertEquals("Banjo strings", this.strings.toString());
+    public void canGetPartName(){
+        assertEquals("Banjo strings", this.strings.getPartName());
     }
 
     @Test
     public void canGetOwner(){
         assertEquals(null, this.strings.getOwner());
     }
+
+    @Test
+    public void canGetForWhichInstrument(){
+        assertEquals("Banjo", this.strings.getForInstrument());
+    }
+
 
     @Test
     public void canChangeOwner(){

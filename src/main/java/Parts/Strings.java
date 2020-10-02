@@ -1,7 +1,6 @@
 package Parts;
 
 import Behaviours.IChangeOwners;
-import Instruments.Instrument;
 
 public class Strings implements IChangeOwners {
 

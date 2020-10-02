@@ -1,7 +1,6 @@
 package Keyboard;
 
 import Instruments.Keyboard.Piano;
-import Instruments.Woodwind.Clarinet;
 import org.junit.Before;
 import org.junit.Test;
 

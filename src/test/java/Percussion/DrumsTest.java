@@ -1,7 +1,6 @@
 package Percussion;
 
 import Instruments.Percussion.Drums;
-import Instruments.Woodwind.Clarinet;
 import org.junit.Before;
 import org.junit.Test;
 

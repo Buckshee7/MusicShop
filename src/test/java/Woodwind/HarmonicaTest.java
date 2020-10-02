@@ -1,6 +1,5 @@
 package Woodwind;
 
-import Instruments.Woodwind.Clarinet;
 import Instruments.Woodwind.Harmonica;
 import org.junit.Before;
 import org.junit.Test;

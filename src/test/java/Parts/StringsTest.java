@@ -1,7 +1,8 @@
-import Instruments.InstrumentType;
+package Parts;
+
+
 import Instruments.Strings.Banjo;
-import Instruments.Strings.Violin;
-import Parts.Strings;
+
 import org.junit.Before;
 import org.junit.Test;
 

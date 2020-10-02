@@ -1,6 +1,7 @@
 package Strings;
 
 import Instruments.Strings.Banjo;
+import Parts.Strings;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -12,7 +13,7 @@ public class BanjoTest {
 
     @Before
     public void before(){
-        this.instrument = new Banjo("Pink");
+        this.instrument = new Banjo("Pink", true);
     }
 
     @Test
@@ -27,7 +28,7 @@ public class BanjoTest {
 
     @Test
     public void hasStrings(){
-        assertEquals(5, this.instrument.getStrings());
+        assertEquals(5, this.instrument.getNumStrings());
     }
 
     @Test
@@ -39,6 +40,26 @@ public class BanjoTest {
     public void canChangeOwner(){
         this.instrument.changeOwners("the music man");
         assertEquals("the music man", this.instrument.getOwner());
+    }
+
+    @Test
+    public void canBeSoldWithoutStrings(){
+        instrument = new Banjo("Pink", false);
+        assertEquals(null, this.instrument.getStrings());
+    }
+
+    @Test
+    public void canRemoveStrings(){
+        this.instrument.removeStrings();
+        assertEquals(null, this.instrument.getStrings());
+    }
+
+    @Test
+    public void canAddStrings(){
+        this.instrument.removeStrings();
+        Strings strings = new Strings(Banjo.getInstrumentName());
+        this.instrument.addStrings(strings);
+        assertEquals(strings, this.instrument.getStrings());
     }
 
 }

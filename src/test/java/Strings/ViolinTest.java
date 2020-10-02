@@ -1,7 +1,6 @@
 package Strings;
 
 import Instruments.Strings.Violin;
-import Instruments.Woodwind.Clarinet;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -13,7 +12,7 @@ public class ViolinTest {
 
     @Before
     public void before(){
-        this.instrument = new Violin("Pink");
+        this.instrument = new Violin("Pink", true);
     }
 
     @Test
@@ -23,7 +22,7 @@ public class ViolinTest {
 
     @Test
     public void hasStrings(){
-        assertEquals(4, this.instrument.getStrings());
+        assertEquals(4, this.instrument.getNumStrings());
     }
 
     @Test

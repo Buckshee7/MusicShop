@@ -84,5 +84,10 @@ public class ShopItemTest {
         assertEquals(100.00, this.keyboardItem.calculateMarkup(), 0.01);
     }
 
+    @Test
+    public void canSellItem(){
+        this.stringsItem.sell("Tim");
+        assertEquals("Tim", this.stringsItem.getItem().getOwner());
+    }
 
 }

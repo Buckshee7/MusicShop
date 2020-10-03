@@ -2,6 +2,8 @@ package Behaviours;
 
 public interface ISell {
 
-    public void sell();
+    public void sell(String newOwner);
+
+    public double calculateMarkup();
 
 }

@@ -2,6 +2,7 @@ package Instruments;
 
 import Behaviours.IChangeOwners;
 import Behaviours.IPlay;
+import Exceptions.MissingInstrumentPartsException;
 
 public abstract class Instrument implements IPlay, IChangeOwners {
 
@@ -37,5 +38,6 @@ public abstract class Instrument implements IPlay, IChangeOwners {
         this.owner = newOwner;
     }
 
-    public abstract String play();
+    public abstract String play() throws MissingInstrumentPartsException;
+
 }

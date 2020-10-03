@@ -1,22 +1,22 @@
 package Shop;
 
 import Behaviours.IChangeOwners;
+import Behaviours.ISell;
 import Instruments.Instrument;
-import Instruments.InstrumentType;
 import Instruments.Keyboard.KeyboardInstrument;
 import Instruments.Percussion.PercussionInstrument;
 import Instruments.Strings.StringedInstrument;
 import Parts.InstrumentPart;
 
-public class SellableItem {
+public class ShopItem implements ISell {
 
     private double buyPrice;
     private double sellPrice;
     private String description;
     private IChangeOwners item;
 
-    public SellableItem(double buyPrice, double sellPrice, IChangeOwners item) {
-
+    public ShopItem(double buyPrice, double sellPrice, IChangeOwners item) {
+        this.item = item;
         this.description = this.makeDescription();
         this.buyPrice = buyPrice;
         this.sellPrice = sellPrice;
@@ -50,6 +50,14 @@ public class SellableItem {
             forInstrument = String.format("For use with the '%s'", partItem.getForInstrument());
         }
         return String.format("Brand new %s. %s%s", item.getName(), extraInfo, forInstrument);
+    }
+
+    public void sell(String newOwner){
+        this.item.changeOwners(newOwner);
+    }
+
+    public double calculateMarkup(){
+        return this.sellPrice - this.buyPrice;
     }
 
 

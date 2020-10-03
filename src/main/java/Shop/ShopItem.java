@@ -94,5 +94,8 @@ public class ShopItem implements ISell {
         return this.sellPrice - this.buyPrice;
     }
 
+    public String toString(){
+        return this.item.getName();
+    }
 
 }

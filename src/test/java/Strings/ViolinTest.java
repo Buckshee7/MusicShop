@@ -1,5 +1,6 @@
 package Strings;
 
+import Exceptions.MissingInstrumentPartsException;
 import Instruments.InstrumentType;
 import Instruments.Strings.Violin;
 import org.junit.Before;
@@ -33,7 +34,25 @@ public class ViolinTest {
 
     @Test
     public void canPlay(){
-        assertEquals("** screeching cat **", this.instrument.play());
+        String sound = "";
+        try {sound = this.instrument.play();}
+        catch (MissingInstrumentPartsException ex){
+            System.out.println(ex.getMessage());
+        }
+        assertEquals("** screeching cat **", sound);
+    }
+
+    @Test
+    public void cantPlayIfNoStrings(){
+        this.instrument.removeStrings();
+        String exceptionMessage = "";
+        String sound = "";
+        try {sound = this.instrument.play();}
+        catch (MissingInstrumentPartsException ex){
+            exceptionMessage = ex.getMessage();
+        }
+        assertEquals("Can't play with no strings!", exceptionMessage);
+        assertEquals("", sound);
     }
 
     @Test

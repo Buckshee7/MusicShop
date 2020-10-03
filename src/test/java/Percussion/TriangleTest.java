@@ -31,12 +31,6 @@ public class TriangleTest {
         assertEquals(10, this.instrument.getMaxDecibels());
     }
 
-
-    @Test
-    public void canPlay(){
-        assertEquals("Ting", this.instrument.play());
-    }
-
     @Test
     public void canChangeOwner(){
         this.instrument.changeOwners("the music man");

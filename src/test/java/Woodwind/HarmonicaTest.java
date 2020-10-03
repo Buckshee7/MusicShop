@@ -32,11 +32,6 @@ public class HarmonicaTest {
     }
 
     @Test
-    public void canPlay(){
-        assertEquals("I AM THE INDESCRIBABLE NOISE A HARMONICA MAKES", this.instrument.play());
-    }
-
-    @Test
     public void canChangeOwner(){
         this.instrument.changeOwners("the music man");
         assertEquals("the music man", this.instrument.getOwner());

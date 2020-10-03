@@ -33,11 +33,6 @@ public class BanjoTest {
     }
 
     @Test
-    public void canPlay(){
-        assertEquals("bara-na-na-na-ning-ning-ning", this.instrument.play());
-    }
-
-    @Test
     public void canChangeOwner(){
         this.instrument.changeOwners("the music man");
         assertEquals("the music man", this.instrument.getOwner());

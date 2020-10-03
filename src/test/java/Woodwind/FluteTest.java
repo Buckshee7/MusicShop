@@ -32,11 +32,6 @@ public class FluteTest {
     }
 
     @Test
-    public void canPlay(){
-        assertEquals("doo-di-loo-oo", this.instrument.play());
-    }
-
-    @Test
     public void canChangeOwner(){
         this.instrument.changeOwners("the music man");
         assertEquals("the music man", this.instrument.getOwner());
